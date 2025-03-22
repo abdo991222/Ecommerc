@@ -1,0 +1,1 @@
+import{Eb as l,Ya as t,pb as n,qb as r}from"./chunk-CPR7NIO3.js";import"./chunk-4CLCTAJ7.js";var s=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=t({type:o,selectors:[["app-allorders"]],decls:2,vars:0,template:function(e,p){e&1&&(n(0,"p"),l(1,"allorders works!"),r())},encapsulation:2})};export{s as AllordersComponent};
