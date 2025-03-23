@@ -1,0 +1,34 @@
+
+<section   class="bg-gray-100 w-[90%] shadow rounded p-7 mx-auto">
+
+  <h1 class="text-center text-green-600 text-4xl py-3">Check Out</h1>
+<form [formGroup]="checkOutForm" (ngSubmit)="submitForm()" >
+
+
+  <div class="mb-6">
+    <label for="details" class="block mb-2 text-sm font-medium text-gray-900 ">details</label>
+    <textarea
+    formControlName="details"
+    id="details" class="bg-white border border-gray-300  text-sm rounded-lg
+    block w-full p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+  </div>
+
+  <div class="mb-6">
+    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">phone</label>
+    <input
+    formControlName="phone"
+    type="tel" id="phone" class="bg-white border border-gray-300  text-sm rounded-lg
+    block w-full p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500">
+  </div>
+
+  <div class="mb-6">
+    <label for="city" class="block mb-2 text-sm font-medium text-gray-900 ">city</label>
+    <input
+    formControlName="city"
+    type="text" id="city" class="bg-white border border-gray-300  text-sm rounded-lg
+    block w-full p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500">
+  </div>
+  <button type="submit"  [disabled]="!checkOutForm.valid" class="btn-main py-2 px-10 text-center">PayMent</button>
+</form>
+
+</section>
